@@ -5,14 +5,15 @@
 	top: 0;
 	bottom: 0;
 	list-style: none;
-    width: 300px;
+    width: 250px;
     height: 375px;
+    background: rgba(255,255,255,0.9);
 	margin: 0;
     padding-top: 20px;
 	line-height: 15px;
 	transition: all 0.5s;
-    border-right: 1px solid $blue;
-    border-bottom: 1px solid $blue;
+    border-right: 1px solid grey;
+    border-bottom: 1px solid grey;
 	z-index: 20;
     li {
         width: 100%;
@@ -181,7 +182,7 @@ input:checked {
     .hero {
         // border: 1px solid red;
         width: 100%;
-        .hero--imagetable__full{
+        .hero--image__full{
             width: 100%;
             position: relative;
             img {
@@ -194,7 +195,7 @@ input:checked {
             top: 7%;
             left: 10%;
         }
-        .hero--imagetable__half {
+        .hero--image__half {
             display: none;
             width: 100%;
             img {
@@ -205,7 +206,17 @@ input:checked {
     }
 }
 // ------ RESPONSIVENESS ------
-@media (max-width: 770px) {
+// @media (max-width: 1200px) {
+//     .hero--image__full {
+//         display: none;
+//     }
+//     .hero--image__half {
+//         display: block;
+//         position: relative;
+//     }
+// }
+
+@media (max-width: 1060px) {
     .top-bar {
         .container--nav {
             display: none;

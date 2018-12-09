@@ -1,8 +1,3 @@
-const hello = 'World';
+const hello = 'Hi World';
 console.log(hello);
 
-$(document).ready(function () {
-    $('#nav-icon').click(function () {
-        $(this).toggleClass('open');
-    });
-});

@@ -22,7 +22,7 @@
             <li><a href="#news">News</a></li>
         </ul>
         <!-- -- SITE WRAPPER -- -->
-        <div class="site--wrapper" id="home">
+        <div class="site--wrapper">
             <!-- -- TOP BAR -- -->
             <section class="top-bar" id="top-bar">
     
@@ -41,50 +41,58 @@
                         <li><a href="#about">About</a></li>
                         <li><a href="#portfolio">Portfolio</a></li>
                         <li><a href="#contact">Contact</a></li>
-                        <li><a href="#news">News</a></li>
+                        <li><a href="https://brianabrown.ca/news/" target="_blank">News</a></li>
                     </ul>
                 </nav>
     
             </section>
-            <section class="hero">
-                <table class="hero--imagetable__full">
-                    <tr class="row-one">
-                        <td class="row-one__left">
-                            <img src="../../public/assets/hero-1.jpg">
-                        </td>
-                        <td class="row-one__right">
-                            <img src="../../public/assets/hero-2.jpg">
-                        </td>
-                    </tr>
-                    <tr class="row-two">
-                        <td class="row-two__left">
-                            <img src="../../public/assets/hero-3.jpg">
-                        </td>
-                        <td class="row-two__right">
-                            <img src="../../public/assets/hero-4.jpg">
-                        </td>
-                    </tr>
-                </table>
-                <!-- RESPONSIVE HERO TABLE -->
-                <table class="hero--imagetable__half">
-                    <tr class="row-one">
-                        <td class="row-one__left">
-                            <img src="../../public/assets/hero-1.jpg">
-                        </td>
-                    </tr>
-                    <tr class="row-two">
-                        <td class="row-two__left">
-                            <img src="../../public/assets/hero-3.jpg">
-                        </td>
-                    </tr>
-                </table>
-                <!-- RESPONSIVE HERO TABLE -->
+            <!-- -- HERO -- -->
+            <section class="hero" id="home">
+                <div class="hero--image__full">
+                    <img src="../../public/assets/hero-full.jpg">
+                </div>
+                <!-- RESPONSIVE HERO IMAGE -->
+                <div class="hero--image__half">
+                    <img src="../../public/assets/hero-half.jpg">
+                </div>
+                <!-- END -->
                 <div class="hero--titles">
                     <h1>Briana Brown</h1>
                     <h2>Writer</h2>
                     <h2>Director</h2>
                 </div>
             </section>
+            <!-- -- ABOUT ME -- -->
+            <section class="" id="about">
+
+            </section>
+            <!-- -- TIMELINE -- -->
+            <section>
+            
+            </section>
+            <!-- -- PORTFOLIO -- -->
+            <section id="portfolio">
+            
+            </section>
+            <!-- -- CONTACT ME -- -->
+            <section id="contact">
+            
+            </section>
+            <!-- -- FOOTER -- -->
+            <section>
+            
+            </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="public/scripts/app.js"></script>
+    <script>
+    $(document).ready(function () {
+        $('#nav-icon').click(function () {
+            $(this).toggleClass('open');
+        });
+    });
+    </script>
+
+
 </body>
 </html>
