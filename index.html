@@ -67,7 +67,40 @@
 
             </section>
             <!-- -- TIMELINE -- -->
-            <section>
+            <section class="timeline"> 
+                <div class="timeline-images">
+                    <img id="2010" src="../../public/assets/2010.jpg">
+                    <img id="2012" src="../../public/assets/2012.jpg">
+                    <img id="2013" src="../../public/assets/2013.jpg">
+                    <img id="2014" src="../../public/assets/2014.jpg">
+                    <img id="2015" src="../../public/assets/2015.jpg">
+                    <img id="2016" src="../../public/assets/2016.jpg">
+                </div>
+                <div class="rollover-container">
+                    <div class="rollover 2010">
+                        <h4>
+                            2010 │ Best of Fringe, Toronto Fringe 2010 – Almost, Again (playwright and director)
+                        </h4>
+                    </div>
+                    <div class="rollover 2012">
+                        <h4>2012 │ Faculty of Arts Graduate Award, UBC</h4>
+                        <h4>2012 │ Jacob Zilber Award, UBC Creative Writing Department for exceptional promise in screenwriting</h4>
+                    </div>
+                    <div class="rollover 2013">
+                        <h4>2013 │ Flying Start Recipient, Touchstone Theatre / Playwrights Theatre Centre, Vancouver</h4>
+                        <h4>2013 │ Shortlisted for Women in Film and Television Screenwriting Award</h4>
+                    </div>
+                    <div class="rollover 2014">
+                        <h4>2014 │ Invited participant in Stratford Festival’s annual Playwrights Retreat</h4>
+                    </div>
+                    <div class="rollover 2015">
+                        <h4>2015 │ Winner of Jury Selection, Trafalgar 24, Driftwood Theatre</h4>
+                        <h4>2015 │ Nominated for a Jessie Richardson Award, The Concessions, Outstanding New Play</h4>
+                    </div>
+                    <div class="rollover 2016">
+                        <h4>2016 │ Nominated for a Playwrights Guild Tom Hendry Award for New Comedy, <em>Robert</em></h4>
+                    </div>
+                </div>
             
             </section>
             <!-- -- PORTFOLIO -- -->
@@ -76,12 +109,60 @@
             </section>
             <!-- -- CONTACT ME -- -->
             <section id="contact">
-            
+                <form action="https://formspree.io/hi@erinmaaskant.com" method="POST" autocomplete="off" name="write-us">
+                
+                    <label label class="visuallyhidden" for="full-name">Name</label>
+                    <input type="text" class="full-name" name="Full Name" placeholder="Name">
+                
+                    <label label class="visuallyhidden" for="email">Email</label>
+                    <input type="email" class="email" name="_replyto" placeholder="Email">
+                
+                    <label label class="visuallyhidden" for="message">Message</label>
+                    <input type="text" class="message" name="Message" placeholder="Message">
+                
+                    <input type="text" class="hidden" name="_gotcha" />
+                    <input type="hidden" class="hidden" name="_subject" value="New submission!" />
+                
+                    <label class="visuallyhidden" for="submit">Submit</label>
+                    <input type="submit" class="submit" name="Submit" value="Drop me a line" placeholder="Submit">
+                
+                </form>
             </section>
             <!-- -- FOOTER -- -->
-            <section>
+            <footer>
+                <div class="footer--container">
+                    <ul>
+                        <li>
+                            <div class="footer--container__icon">
+                                <a href="https://twitter.com/Erin_Annette_M" target=_blank><i class="footer--icon fab fa-twitter"></i></a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="footer--container__icon">
+                                <a href="https://www.instagram.com/__erin_in_toronto__/" target=_blank><i class="footer--icon fab fa-instagram"></i></a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="footer--container__icon">
+                                <a href="https://www.linkedin.com/in/erin-maaskant-b5955370" target=_blank><i class="footer--icon fab fa-linkedin"></i></a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="footer--container__icon">
+                                <a href="https://medium.com/@erinannette" target=_blank><i class="footer--icon fab fa-medium-m"></i></a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="footer--container__icon right">
+                                <a href="https://github.com/erinannette" target=_blank><i class="footer--icon fab fa-github"></i></a>
+                            </div>
+                        </li>
+                </div>
             
-            </section>
+                <div class="footer--container">
+                    <h5 class="text--paragraph__small">copyright Briana Brown 2018</h5>
+                </div>
+            </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="public/scripts/app.js"></script>
