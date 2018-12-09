@@ -34,26 +34,48 @@
 }
 
 // ----- FORM -----
+#contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 10% 0;
+    background-color: $ltblue;
+}
 form {
-        width: 100%;
-        padding: 5% 7% 5% 2%;
+        border: 1px solid red;
+        width: 60%;
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
+        .form-top, .form-bottom {
+            border: 1px solid red;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            .form-row_left, .form-row_right {
+                border: 1px solid red;
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                align-content: space-between;
+            }
+        }
         .full-name, .email {
+            border: 1px solid red;
             box-shadow: none;
             background-color: $ltblue;
-            border: 1px solid white;
-            width: calc(50% - 10px);
-            margin: 5px;
+            border: 1px solid black;
+            width: 95%;
+            height: 45px;
             padding: 2% 1%;
             @include paragraph-styles(15);
         }
         .message {
             background-color: $ltblue;
-            border: 1px solid white;
-            width: calc(100% - 10px);
-            margin: 5px;
+            border: 1px solid black;
+            width: 95%;
+            height: 100px;
             padding: 1% 1% 8%;
             @include paragraph-styles(15);
         }
@@ -64,7 +86,7 @@ form {
             margin: 5px auto 0;
             padding: 10px;
             background-color: $ltblue;
-            border: 1px solid white;
+            border: 1px solid black;
             @include title-styles(15);
             color: $mdgrey;
             transition: all 0.3s ease-in-out;

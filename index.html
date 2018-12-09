@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="public/styles/style.css">
     <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,700"|Spectral:300,300i,400" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
     <title>Briana Brown</title>
 </head>
 <body>
@@ -109,22 +111,37 @@
             </section>
             <!-- -- CONTACT ME -- -->
             <section id="contact">
-                <form action="https://formspree.io/hi@erinmaaskant.com" method="POST" autocomplete="off" name="write-us">
+                <h3>Contact Me</h3>
+                <p>
+                   Have a question for me or want to chat? Send me a message below and let's chat. 
+                </p>
+                <p>
+                    If you’re interested in a playwriting or directing workshop, or one-on-one mentorship, please get in touch!
+                </p>
+                <form action="https://formspree.io/info@brianabrown.ca" method="POST" autocomplete="off" name="write-us">
                 
-                    <label label class="visuallyhidden" for="full-name">Name</label>
-                    <input type="text" class="full-name" name="Full Name" placeholder="Name">
+                    <div class="form-top">
+                        <div class="form-row_left">
+                            <label label class="visuallyhidden" for="full-name">Name</label>
+                            <input type="text" class="full-name" name="Full Name" placeholder="Name">
+                    
+                            <label label class="visuallyhidden" for="email">Email</label>
+                            <input type="email" class="email" name="_replyto" placeholder="Email">
+
+                            <input type="text" class="hidden" name="_gotcha" />
+                            <input type="hidden" class="hidden" name="_subject" value="New submission!" />
+                        </div>
+                    
+                        <div class="form-row_right">
+                            <label label class="visuallyhidden" for="message">Message</label>
+                            <input type="text" class="message" name="Message" placeholder="Message">
+                        </div>
+                    </div>
                 
-                    <label label class="visuallyhidden" for="email">Email</label>
-                    <input type="email" class="email" name="_replyto" placeholder="Email">
-                
-                    <label label class="visuallyhidden" for="message">Message</label>
-                    <input type="text" class="message" name="Message" placeholder="Message">
-                
-                    <input type="text" class="hidden" name="_gotcha" />
-                    <input type="hidden" class="hidden" name="_subject" value="New submission!" />
-                
-                    <label class="visuallyhidden" for="submit">Submit</label>
-                    <input type="submit" class="submit" name="Submit" value="Drop me a line" placeholder="Submit">
+                    <div class="form-bottom">
+                        <label class="visuallyhidden" for="submit">Submit</label>
+                        <input type="submit" class="submit" name="Submit" value="Drop me a line" placeholder="Submit">
+                    </div>
                 
                 </form>
             </section>
@@ -143,18 +160,8 @@
                             </div>
                         </li>
                         <li>
-                            <div class="footer--container__icon">
-                                <a href="https://www.linkedin.com/in/erin-maaskant-b5955370" target=_blank><i class="footer--icon fab fa-linkedin"></i></a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="footer--container__icon">
-                                <a href="https://medium.com/@erinannette" target=_blank><i class="footer--icon fab fa-medium-m"></i></a>
-                            </div>
-                        </li>
-                        <li>
                             <div class="footer--container__icon right">
-                                <a href="https://github.com/erinannette" target=_blank><i class="footer--icon fab fa-github"></i></a>
+                                <a href="https://www.linkedin.com/in/erin-maaskant-b5955370" target=_blank><i class="footer--icon fab fa-linkedin"></i></a>
                             </div>
                         </li>
                 </div>
