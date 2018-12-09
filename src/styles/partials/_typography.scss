@@ -33,11 +33,15 @@ body {
     font-size: 1.7rem;
 }
 h1 {
-    @include title-styles (60);
-    letter-spacing: 2px;
+    @include title-styles (40);
+    letter-spacing: 5px;
+    text-align: left;
 }
 h2 {
-    @include title-styles (35);
+    @include title-styles (25);
+    text-align: left;
+    letter-spacing: 2px;
+    line-height: 35px;
 }
 h3 {
     @include title-styles (25);
