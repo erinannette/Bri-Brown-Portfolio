@@ -1,0 +1,61 @@
+$basefont1: 'Comfortaa', sans-serif;
+$basefont2: 'Spectral', serif;
+
+$blue: #15379f;
+$mdblue: #c7d1d1;
+$ltblue: #f1f3f3;
+$dkgrey: #222222;
+$mdgrey: #5d5e5d;
+$ltgrey: #e3e8e8;
+
+@mixin title-styles($sizeValue) {
+    font-size: $sizeValue * 1px;
+    font-size: ($sizeValue/10) * 1rem;
+    font-family: $basefont1;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: black;
+}
+@mixin paragraph-styles($sizeValue) {
+    font-size: $sizeValue * 1px;
+    font-size: ($sizeValue/10) * 1rem;
+    font-family: $basefont2;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: black;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.7rem;
+}
+h1 {
+    @include title-styles (60);
+    letter-spacing: 2px;
+}
+h2 {
+    @include title-styles (35);
+}
+h3 {
+    @include title-styles (25);
+}
+h4 {
+    @include title-styles (20);
+}
+h5 {
+    @include paragraph-styles(14);
+}
+ul, li {
+    @include paragraph-styles (17);
+}
+.container--nav {
+    li {
+        @include title-styles(18);
+    }
+    p {
+        @include paragraph-styles (18);
+    }
+}

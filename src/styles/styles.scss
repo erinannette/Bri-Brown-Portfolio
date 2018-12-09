@@ -1,3 +1,5 @@
-body {
-    background: red;
-}
+// PARTIALS
+@import "partials/_setup.scss";
+@import "partials/_typography.scss";
+@import "partials/_menu.scss";
+
