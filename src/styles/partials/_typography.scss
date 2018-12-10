@@ -21,7 +21,7 @@ $ltgrey: #e3e8e8;
 @mixin paragraph-styles($sizeValue) {
     font-size: $sizeValue * 1px;
     font-size: ($sizeValue/10) * 1rem;
-    font-family: $basefont2;
+    font-family: $basefont1;
     font-weight: 300;
     letter-spacing: 1px;
     color: black;
@@ -50,7 +50,17 @@ h4 {
     @include title-styles (20);
 }
 h5 {
-    @include paragraph-styles(14);
+    @include paragraph-styles(12);
+    font-weight: 300;
+    color: $mdgrey;
+}
+p {
+    @include paragraph-styles(17);
+    line-height: 25px;
+}
+a {
+    text-decoration: none;
+    color: $blue;
 }
 ul, li {
     @include paragraph-styles (17);
