@@ -57,6 +57,24 @@
 //     }
 // }
 
+// ----- PORTFOLIO -----
+#portfolio {
+    display: flex;
+    flex-direction: row;
+    padding: 5% 0;
+    .portfolio-image {
+        width: 70%;
+        background-image: url("../../public/assets/portfolio.jpg");
+        .portfolio-writing {
+            background-color: rgba(255, 255, 255, 0.7);
+        }
+    }
+    .portfolio-quote {
+        width: 30%;
+        padding: 0 5%;
+    }
+}
+
 // ----- FORM -----
 #contact {
     display: flex;
@@ -92,7 +110,7 @@ form {
         .full-name, .email {
             box-shadow: none;
             background-color: $ltblue;
-            border: 1px solid black;
+            border: 1px solid $mdgrey;
             width: 95%;
             height: 45px;
             padding: 2% 1%;
