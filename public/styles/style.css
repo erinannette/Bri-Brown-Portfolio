@@ -159,7 +159,7 @@ h1 {
   font-size: 4rem;
   font-family: "Comfortaa", sans-serif;
   font-weight: 400;
-  text-align: center;
+  text-align: left;
   text-transform: uppercase;
   letter-spacing: 1px;
   color: black;
@@ -171,7 +171,7 @@ h2 {
   font-size: 2.5rem;
   font-family: "Comfortaa", sans-serif;
   font-weight: 400;
-  text-align: center;
+  text-align: left;
   text-transform: uppercase;
   letter-spacing: 1px;
   color: black;
@@ -184,7 +184,7 @@ h3 {
   font-size: 2.5rem;
   font-family: "Comfortaa", sans-serif;
   font-weight: 400;
-  text-align: center;
+  text-align: left;
   text-transform: uppercase;
   letter-spacing: 1px;
   color: black; }
@@ -194,7 +194,7 @@ h4 {
   font-size: 2rem;
   font-family: "Comfortaa", sans-serif;
   font-weight: 400;
-  text-align: center;
+  text-align: left;
   text-transform: uppercase;
   letter-spacing: 1px;
   color: black; }
@@ -235,7 +235,7 @@ ul, li {
   font-size: 1.8rem;
   font-family: "Comfortaa", sans-serif;
   font-weight: 400;
-  text-align: center;
+  text-align: left;
   text-transform: uppercase;
   letter-spacing: 1px;
   color: black; }
@@ -272,7 +272,7 @@ ul, li {
       font-size: 2.2rem;
       font-family: "Comfortaa", sans-serif;
       font-weight: 400;
-      text-align: center;
+      text-align: left;
       text-transform: uppercase;
       letter-spacing: 1px;
       color: black;
@@ -402,7 +402,7 @@ input:checked {
           font-size: 1.8rem;
           font-family: "Comfortaa", sans-serif;
           font-weight: 400;
-          text-align: center;
+          text-align: left;
           text-transform: uppercase;
           letter-spacing: 1px;
           color: black;
@@ -466,9 +466,19 @@ input:checked {
       display: block; }
 
 #portfolio {
+  width: 100%;
+  padding: 5% 0;
   display: flex;
-  flex-direction: row;
-  padding: 5% 0; }
+  flex-direction: column;
+  flex-wrap: wrap; }
+  #portfolio .portfolio-title {
+    width: 100%;
+    padding: 0 2% 0 10%; }
+    #portfolio .portfolio-title h3 {
+      padding-bottom: 2%; }
+  #portfolio .portfolio-content {
+    display: flex;
+    flex-direction: row; }
   #portfolio .portfolio-image {
     width: 70%;
     background-image: url("../../public/assets/portfolio.jpg");
@@ -478,14 +488,18 @@ input:checked {
     display: flex;
     flex-direction: row; }
     #portfolio .portfolio-image .portfolio-left {
-      width: calc(50% - 5px); }
+      width: calc(50% - 6px); }
     #portfolio .portfolio-image .portfolio-space {
-      width: 5px; }
+      width: 3px; }
     #portfolio .portfolio-image .portfolio-writing, #portfolio .portfolio-image .portfolio-directing {
       background-color: rgba(255, 255, 255, 0.5);
-      width: 25%; }
+      width: 25%;
+      transition: ease-in 0.3s; }
+      #portfolio .portfolio-image .portfolio-writing:hover, #portfolio .portfolio-image .portfolio-directing:hover {
+        background-color: rgba(255, 255, 255, 0.8); }
       #portfolio .portfolio-image .portfolio-writing h3, #portfolio .portfolio-image .portfolio-directing h3 {
-        padding-top: 25%; }
+        padding: 25% 0;
+        text-align: center; }
   #portfolio .portfolio-quote {
     width: 30%;
     padding: 0 5%; }
@@ -553,7 +567,7 @@ form {
     font-size: 1.5rem;
     font-family: "Comfortaa", sans-serif;
     font-weight: 400;
-    text-align: center;
+    text-align: left;
     text-transform: uppercase;
     letter-spacing: 1px;
     color: black;
