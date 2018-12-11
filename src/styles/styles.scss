@@ -23,6 +23,10 @@
     }
     .about-image {
         width: 30%;
+        background: url("../../public/assets/about-me.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
         img {
             width: 100%;
             display: block;
