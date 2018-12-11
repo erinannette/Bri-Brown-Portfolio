@@ -410,9 +410,9 @@ input:checked {
           padding: 0 5%;
           text-decoration: none; }
           .top-bar .container--nav ul li a:hover {
-            color: #c7d1d1;
-            transition: all 0.3s;
-            border-bottom: 1px solid #c7d1d1; }
+            color: #15379f;
+            transition: all 0.5s;
+            border-bottom: 1px solid #15379f; }
 
 .site--wrapper .hero {
   width: 100%; }
