@@ -408,7 +408,8 @@ input:checked {
           color: black;
           transition: all 0.3s ease-in-out;
           padding: 0 5%;
-          text-decoration: none; }
+          text-decoration: none;
+          border-bottom: 1px solid rgba(255, 255, 255, 0); }
           .top-bar .container--nav ul li a:hover {
             color: #15379f;
             transition: all 0.5s;
