@@ -34,33 +34,6 @@
     }
 }
 
-// TIMELINE
-// .timeline {
-//     pointer-events: none;
-//     .timeline-images {
-//         width: 100%;
-//         display: flex;
-//         flex-direction: row;
-//         img {
-//             width: 100%;
-//             display: block;
-//         }
-
-//     }
-//     .rollover-container {
-//         position: relative;
-//         .rollover {
-//             pointer-events: auto;
-//             position: absolute;
-//             top: 0;
-//             left: 0;
-//             h4 {
-//                 color: rgba(0,0,0,0);
-//             }
-//         }
-//     }
-// }
-
 // ----- PORTFOLIO -----
 #portfolio {
     width: 100%;
@@ -109,6 +82,8 @@
     .portfolio-quote {
         width: 30%;
         padding: 0 5%;
+        background-color: $ltblue;
+
     }
 }
 // ----- NEWS -----
