@@ -73,3 +73,6 @@ ul, li {
         @include paragraph-styles (18);
     }
 }
+i {
+    @include paragraph-styles(30);
+}

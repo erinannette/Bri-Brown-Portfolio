@@ -249,6 +249,14 @@ ul, li {
   letter-spacing: 1px;
   color: black; }
 
+i {
+  font-size: 30px;
+  font-size: 3rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: black; }
+
 .nav {
   position: fixed;
   left: -300px;
@@ -731,6 +739,14 @@ ul, li {
   letter-spacing: 1px;
   color: black; }
 
+i {
+  font-size: 30px;
+  font-size: 3rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: black; }
+
 .nav {
   position: fixed;
   left: -300px;
@@ -978,6 +994,12 @@ footer {
   border: 1px solid #ccc;
   box-shadow: 2px 2px 2px #ccc;
   overflow: hidden; }
+  .carouselbox .buttons {
+    width: 100%; }
+    .carouselbox .buttons .buttons i {
+      font-size: 3rem; }
+    .carouselbox .buttons .buttons .prev {
+      padding-right: 35px; }
 
 .content {
   margin: 0;
@@ -989,7 +1011,7 @@ footer {
   padding: 0;
   width: 100%;
   list-style: none;
-  text-align: center; }
+  text-align: left; }
 
 .active {
   height: 500px; }
@@ -1004,7 +1026,6 @@ footer {
 /* BUTTONS */
 .active .buttons {
   padding: 5px 0;
-  background: #eee;
   text-align: center;
   z-index: 10;
   position: relative; }
@@ -1265,6 +1286,14 @@ ul, li {
 .container--nav p {
   font-size: 18px;
   font-size: 1.8rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: black; }
+
+i {
+  font-size: 30px;
+  font-size: 3rem;
   font-family: "Lato", sans-serif;
   font-weight: 300;
   letter-spacing: 1px;

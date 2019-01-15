@@ -23,6 +23,15 @@
     border: 1px solid #ccc;
     box-shadow: 2px 2px 2px #ccc;
     overflow: hidden;
+    .buttons {
+        width: 100%;
+        .buttons i {
+            font-size: 3rem;
+        }
+        .buttons .prev {
+            padding-right: 35px;
+        }
+    }
 }
 .content {
     margin: 0;
@@ -34,7 +43,7 @@
     padding: 0;
     width: 100%;
     list-style: none;
-    text-align: center;
+    text-align: left;
 }
 .active {
     height: 500px;
@@ -49,7 +58,6 @@
 /* BUTTONS */
 .active .buttons {
     padding: 5px 0;
-    background: #eee;
     text-align: center;
     z-index: 10;
     position: relative;
