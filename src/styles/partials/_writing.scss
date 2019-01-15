@@ -1,0 +1,67 @@
+// PARTIALS
+@import "partials/_setup.scss";
+@import "partials/_typography.scss";
+@import "partials/_menu.scss";
+@import "partials/_footer.scss";
+
+.section--container {
+    border: 1px solid red;
+    width: 100%;
+    h3 {
+        padding: 80px 0 20px 20px;
+    }
+}
+
+
+// WRITING CAROUSEL
+.carouselbox {
+    font-family: sans-serif;
+    font-size: 16px;
+    width: 100%;
+    position: relative;
+    margin: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 2px #ccc;
+    overflow: hidden;
+}
+.content {
+    margin: 0;
+    padding: 0;
+}
+.content li {
+    font-size: 100px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    list-style: none;
+    text-align: center;
+}
+.active {
+    height: 500px;
+}
+.active li {
+    position: absolute;
+    top: 500px;
+}
+.active li.current {
+    top: 30px;
+}
+/* BUTTONS */
+.active .buttons {
+    padding: 5px 0;
+    background: #eee;
+    text-align: center;
+    z-index: 10;
+    position: relative;
+}
+.carouselbox button {
+    border: none;
+    display: none;
+}
+.active button {
+    display: inline-block;
+} 
+.offscreen {
+    position: absolute;
+    left: -2000px;
+}

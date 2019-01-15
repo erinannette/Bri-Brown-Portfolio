@@ -9,6 +9,8 @@
     <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,700" |Spectral:300,300i,400" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
         crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
     <title>Briana Brown</title>
 </head>
 
@@ -41,29 +43,46 @@
 
                 <nav class="container--nav">
                     <ul class="top-bar-nav">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="directing.html">Directing</a></li>
+                        <!-- <li><a href="#about">About</a></li>
                         <li><a href="#portfolio">Portfolio</a></li>
                         <li><a href="#news">News</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="index.html" id="#contact">Contact</a></li> -->
                     </ul>
                 </nav>
 
             </section>
-            <section>
+            <section class="section--container">
+                <h3>Writing Portfolio</h3>
                 <div class="carouselbox">
-                    <h3>Writing Projects</h3>
                     <div class="buttons">
                         <button class="prev">
-                            < </button> <button class="next"> >
-                        </button>
+                            <i class="fas fa-chevron-circle-left"></i>
+                        </button> 
                     </div>
                     <ul class="content">
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
+                        <li>
+                            <img src="../public/assets/carousel-1.jpg">
+                        </li>
+                        <li>
+                            <img src="../public/assets/carousel-2.jpg">
+                        </li>
+                        <li>
+                            <img src="../public/assets/carousel-3.jpg">
+                        </li>
+                        <li>
+                            <img src="../public/assets/carousel-4.jpg">
+                        </li>
+                        <li>
+                            <img src="../public/assets/carousel-5.jpg">
+                        </li>
                     </ul>
+                    <div class="buttons">
+                        <button class="next">
+                            <i class="fas fa-chevron-circle-right"></i>
+                        </button>
+                    </div>
                 </div>
             </section>
             <!-- -- FOOTER -- -->
@@ -100,6 +119,9 @@
                 $(this).toggleClass('open');
             });
         });
+
+
+
     </script>
 
 

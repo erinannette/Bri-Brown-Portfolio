@@ -1,7 +1,7 @@
 const hello = 'Hi World';
 console.log(hello);
 
-carousel = (function () {
+const carousel = (function () {
     let box = document.querySelector('.carouselbox');
     let next = box.querySelector('.next');
     let prev = box.querySelector('.prev');
