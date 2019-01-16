@@ -45,7 +45,7 @@ gulp.task('watch',() => {
     gulp.watch('./src/**/*.js', ['js']);
     gulp.watch('./src/**/*.scss', ['styles']);
     gulp.watch('./public/styles/style.css', reload);
-    gulp.watch('./index.html',reload);
+    gulp.watch('./index.html', reload);
 });
 
 gulp.task('default',['styles','js','watch','bs']);
