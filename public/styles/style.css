@@ -1041,6 +1041,9 @@ footer {
   position: absolute;
   left: -2000px; }
 
+.hide {
+  display: none; }
+
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
   display: block; }
 
