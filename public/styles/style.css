@@ -441,12 +441,6 @@ input:checked {
     position: absolute;
     top: 2%;
     left: 9%; }
-  .site--wrapper .hero .hero--image__half {
-    display: none;
-    width: 100%; }
-    .site--wrapper .hero .hero--image__half img {
-      width: 100%;
-      display: block; }
 
 @media (max-width: 1060px) {
   .top-bar .container--nav {
@@ -931,12 +925,6 @@ input:checked {
     position: absolute;
     top: 2%;
     left: 9%; }
-  .site--wrapper .hero .hero--image__half {
-    display: none;
-    width: 100%; }
-    .site--wrapper .hero .hero--image__half img {
-      width: 100%;
-      display: block; }
 
 @media (max-width: 1060px) {
   .top-bar .container--nav {
@@ -985,61 +973,28 @@ footer {
   .section--container h3 {
     padding: 80px 0 20px 20px; }
 
-.carouselbox {
-  font-family: sans-serif;
-  font-size: 16px;
-  width: 100%;
-  position: relative;
-  margin: 5px;
-  border: 1px solid #ccc;
-  box-shadow: 2px 2px 2px #ccc;
-  overflow: hidden; }
-  .carouselbox .buttons {
-    width: 100%; }
-    .carouselbox .buttons .buttons i {
-      font-size: 3rem; }
-    .carouselbox .buttons .buttons .prev {
-      padding-right: 35px; }
-
-.content {
-  margin: 0;
-  padding: 0; }
-
-.content li {
-  font-size: 100px;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  list-style: none;
-  text-align: center; }
-
-.active {
-  height: 500px; }
-
-.active li {
-  position: absolute;
-  top: 500px; }
-
-.active li.current {
-  top: 30px; }
-
-/* BUTTONS */
-.active .buttons {
-  padding: 5px 0;
-  text-align: center;
-  z-index: 10;
-  position: relative; }
-
-.carouselbox button {
-  border: none;
-  display: none; }
-
-.active button {
-  display: inline-block; }
-
-.offscreen {
-  position: absolute;
-  left: -2000px; }
+.site--wrapper__writing {
+  border: 1px solid red;
+  width: 100%; }
+  .site--wrapper__writing .header--container {
+    border: 1px solid red;
+    width: 100%;
+    height: 40vh;
+    background: url("../../public/assets/hero-writing.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    position: relative; }
+    .site--wrapper__writing .header--container img {
+      width: 100%;
+      display: block; }
+  .site--wrapper__writing .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.5); }
 
 .hide {
   display: none; }
@@ -1486,12 +1441,6 @@ input:checked {
     position: absolute;
     top: 2%;
     left: 9%; }
-  .site--wrapper .hero .hero--image__half {
-    display: none;
-    width: 100%; }
-    .site--wrapper .hero .hero--image__half img {
-      width: 100%;
-      display: block; }
 
 @media (max-width: 1060px) {
   .top-bar .container--nav {
