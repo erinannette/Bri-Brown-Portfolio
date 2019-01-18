@@ -220,8 +220,7 @@ p {
   line-height: 25px; }
 
 a {
-  text-decoration: none;
-  color: #15379f; }
+  text-decoration: none; }
 
 ul, li {
   font-size: 17px;
@@ -704,8 +703,7 @@ p {
   line-height: 25px; }
 
 a {
-  text-decoration: none;
-  color: #15379f; }
+  text-decoration: none; }
 
 ul, li {
   font-size: 17px;
@@ -973,28 +971,46 @@ footer {
   .section--container h3 {
     padding: 80px 0 20px 20px; }
 
-.site--wrapper__writing {
-  border: 1px solid red;
-  width: 100%; }
-  .site--wrapper__writing .header--container {
+.header--wrapper__writing {
+  width: 100%;
+  height: 40vh;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../../public/assets/hero-writing.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom; }
+  .header--wrapper__writing .header--container {
     border: 1px solid red;
     width: 100%;
-    height: 40vh;
-    background: url("../../public/assets/hero-writing.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom;
-    position: relative; }
-    .site--wrapper__writing .header--container img {
-      width: 100%;
-      display: block; }
-  .site--wrapper__writing .overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    background: rgba(255, 255, 255, 0.5); }
+    padding: 5% 0 5% 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; }
+    .header--wrapper__writing .header--container h1 {
+      padding-left: 30px; }
+    .header--wrapper__writing .header--container .home-button {
+      margin: 10px auto 0;
+      padding: 10px;
+      background-color: #f1f3f3;
+      border: 1px solid #5d5e5d;
+      font-size: 15px;
+      font-size: 1.5rem;
+      font-family: "Comfortaa", sans-serif;
+      font-weight: 700;
+      text-align: left;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: black;
+      color: #5d5e5d;
+      transition: all 0.2s ease-in-out; }
+      .header--wrapper__writing .header--container .home-button:hover {
+        background-color: #15379f;
+        border: 1px solid black;
+        color: white; }
+      .header--wrapper__writing .header--container .home-button a:active {
+        color: #5d5e5d; }
+      .header--wrapper__writing .header--container .home-button a:visited {
+        color: white; }
 
 .hide {
   display: none; }
@@ -1220,8 +1236,7 @@ p {
   line-height: 25px; }
 
 a {
-  text-decoration: none;
-  color: #15379f; }
+  text-decoration: none; }
 
 ul, li {
   font-size: 17px;
