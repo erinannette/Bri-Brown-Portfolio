@@ -60,6 +60,7 @@ p {
 }
 a {
     text-decoration: none;
+    
 }
 ul, li {
     @include paragraph-styles (17);
