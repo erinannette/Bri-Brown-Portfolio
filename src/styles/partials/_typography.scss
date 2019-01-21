@@ -54,6 +54,11 @@ h5 {
     font-weight: 300;
     color: $mdgrey;
 }
+h6 {
+    @include title-styles (20);
+    text-transform: none;
+    padding-bottom: 45px;
+}
 p {
     @include paragraph-styles(17);
     line-height: 25px;

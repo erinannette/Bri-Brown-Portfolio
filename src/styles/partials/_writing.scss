@@ -15,20 +15,29 @@
     background-position: bottom;
     padding-left: 25px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    h1 {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    h1, i {
         text-shadow: 2px 2px 4px $mdgrey;
         color: $dkgrey;
+        width: 80%;
+        transition: all 0.2s ease-in-out;
+    }
+    i:hover {
+        color: $blue;
     }
 }
 
-.hide {
+.hide-text {
     display: none;
+}
+.show-text {
+    display: block;
 }
 
 // STAGE - SCREEN - IN DEVELOPMENT
-.section--container {
+.section--wrapper {
     padding-top: 20px;
     max-width: 1800px;
     .home-button {
@@ -75,7 +84,7 @@
     }
     .writing--posters {
         width: 100%;
-        padding: 5% 0;
+        padding: 2% 0;
         .posters--list {
             width: 100%;
             display: flex;
@@ -83,6 +92,17 @@
             li img {
                 width: 100%;
                 display: block;
+            }
+        }
+    }
+    .writing--text {
+        width: 100%;
+        .text-container {
+            width: 90%;
+            height: 40vh;
+            margin: 0 auto;
+            p {
+                padding: 5px 0;
             }
         }
     }

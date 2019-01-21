@@ -210,6 +210,18 @@ h5 {
   font-weight: 300;
   color: #5d5e5d; }
 
+h6 {
+  font-size: 20px;
+  font-size: 2rem;
+  font-family: "Comfortaa", sans-serif;
+  font-weight: 700;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: black;
+  text-transform: none;
+  padding-bottom: 45px; }
+
 p {
   font-size: 17px;
   font-size: 1.7rem;
@@ -692,6 +704,18 @@ h5 {
   color: black;
   font-weight: 300;
   color: #5d5e5d; }
+
+h6 {
+  font-size: 20px;
+  font-size: 2rem;
+  font-family: "Comfortaa", sans-serif;
+  font-weight: 700;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: black;
+  text-transform: none;
+  padding-bottom: 45px; }
 
 p {
   font-size: 17px;
@@ -974,19 +998,27 @@ footer {
   background-position: bottom;
   padding-left: 25px;
   display: flex;
-  flex-direction: column;
-  justify-content: center; }
-  .header--wrapper__writing h1 {
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center; }
+  .header--wrapper__writing h1, .header--wrapper__writing i {
     text-shadow: 2px 2px 4px #5d5e5d;
-    color: #222222; }
+    color: #222222;
+    width: 80%;
+    transition: all 0.2s ease-in-out; }
+  .header--wrapper__writing i:hover {
+    color: #15379f; }
 
-.hide {
+.hide-text {
   display: none; }
 
-.section--container {
+.show-text {
+  display: block; }
+
+.section--wrapper {
   padding-top: 20px;
   max-width: 1800px; }
-  .section--container .home-button {
+  .section--wrapper .home-button {
     width: 10%;
     margin: 10px;
     padding: 10px;
@@ -1003,43 +1035,51 @@ footer {
     text-align: center;
     color: #5d5e5d;
     transition: all 0.2s ease-in-out; }
-    .section--container .home-button:hover {
+    .section--wrapper .home-button:hover {
       background-color: #15379f;
       border: 1px solid black;
       color: white; }
-    .section--container .home-button a:active {
+    .section--wrapper .home-button a:active {
       color: #5d5e5d; }
-    .section--container .home-button a:visited {
+    .section--wrapper .home-button a:visited {
       color: white; }
-  .section--container .writing--container {
+  .section--wrapper .writing--container {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around; }
-    .section--container .writing--container .heading--title {
+    .section--wrapper .writing--container .heading--title {
       background-color: #e3e8e8;
       border: 1px solid #5d5e5d;
       width: 32%;
       padding: 20px 0; }
-      .section--container .writing--container .heading--title h2 {
+      .section--wrapper .writing--container .heading--title h2 {
         text-align: center;
         color: #222222; }
-    .section--container .writing--container .active {
+    .section--wrapper .writing--container .active {
       background-color: white; }
-    .section--container .writing--container .hover {
+    .section--wrapper .writing--container .hover {
       background-color: #15379f;
       border: 1px solid black;
       color: white; }
-  .section--container .writing--posters {
+  .section--wrapper .writing--posters {
     width: 100%;
-    padding: 5% 0; }
-    .section--container .writing--posters .posters--list {
+    padding: 2% 0; }
+    .section--wrapper .writing--posters .posters--list {
       width: 100%;
       display: flex;
       flex-direction: row; }
-      .section--container .writing--posters .posters--list li img {
+      .section--wrapper .writing--posters .posters--list li img {
         width: 100%;
         display: block; }
+  .section--wrapper .writing--text {
+    width: 100%; }
+    .section--wrapper .writing--text .text-container {
+      width: 90%;
+      height: 40vh;
+      margin: 0 auto; }
+      .section--wrapper .writing--text .text-container p {
+        padding: 5px 0; }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
   display: block; }
@@ -1251,6 +1291,18 @@ h5 {
   color: black;
   font-weight: 300;
   color: #5d5e5d; }
+
+h6 {
+  font-size: 20px;
+  font-size: 2rem;
+  font-family: "Comfortaa", sans-serif;
+  font-weight: 700;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: black;
+  text-transform: none;
+  padding-bottom: 45px; }
 
 p {
   font-size: 17px;
