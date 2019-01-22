@@ -20,6 +20,7 @@ $(function () {
         $('.carousel1').show();
     });
     $('.carousel2-pic').click(function () {
+        $('.carousel0').hide();
         $('.carousel1').hide();
         $('.carousel3').hide();
         $('.carousel4').hide();
@@ -27,6 +28,7 @@ $(function () {
         $('.carousel2').show();
     });
     $('.carousel3-pic').click(function () {
+        $('.carousel0').hide();
         $('.carousel1').hide();
         $('.carousel2').hide();
         $('.carousel4').hide();
@@ -34,6 +36,7 @@ $(function () {
         $('.carousel3').show();
     });
     $('.carousel4-pic').click(function () {
+        $('.carousel0').hide();
         $('.carousel1').hide();
         $('.carousel2').hide();
         $('.carousel3').hide();
