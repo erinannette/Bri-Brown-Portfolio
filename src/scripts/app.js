@@ -11,36 +11,36 @@ console.log(hello);
 
 
 $(function () {
-    $('.carousel1-pic').click(function () {
-        $('.carousel0').hide();
-        $('.carousel2').hide();
-        $('.carousel3').hide();
-        $('.carousel4').hide();
+    $('.stage1-pic').click(function () {
+        $('.stage0').hide();
+        $('.stage2').hide();
+        $('.stage3').hide();
+        $('.stage4').hide();
 
-        $('.carousel1').show();
+        $('.stage1').show();
     });
-    $('.carousel2-pic').click(function () {
-        $('.carousel0').hide();
-        $('.carousel1').hide();
-        $('.carousel3').hide();
-        $('.carousel4').hide();
+    $('.stage2-pic').click(function () {
+        $('.stage0').hide();
+        $('.stage1').hide();
+        $('.stage3').hide();
+        $('.stage4').hide();
 
-        $('.carousel2').show();
+        $('.stage2').show();
     });
-    $('.carousel3-pic').click(function () {
-        $('.carousel0').hide();
-        $('.carousel1').hide();
-        $('.carousel2').hide();
-        $('.carousel4').hide();
+    $('.stage3-pic').click(function () {
+        $('.stage0').hide();
+        $('.stage1').hide();
+        $('.stage2').hide();
+        $('.stage4').hide();
 
-        $('.carousel3').show();
+        $('.stage3').show();
     });
-    $('.carousel4-pic').click(function () {
-        $('.carousel0').hide();
-        $('.carousel1').hide();
-        $('.carousel2').hide();
-        $('.carousel3').hide();
+    $('.stage4-pic').click(function () {
+        $('.stage0').hide();
+        $('.stage1').hide();
+        $('.stage2').hide();
+        $('.stage3').hide();
 
-        $('.carousel4').show();
+        $('.stage4').show();
     });
 });
