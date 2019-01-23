@@ -3,9 +3,9 @@ console.log(hello);
 
 $(function () {
     $('.stage--button').click(function () {
-        $('.stage--button').show('.active');
-        // $('.screen--button').remove('.active');
-        // $('.in-dev--button').remove('.active');
+        $('.stage--button').addClass('active');
+        $('.screen--button').removeClass('active');
+        $('.in-dev--button').removeClass('active');
 
         $('.screen--section').hide();
         $('.in-dev--section').hide();
@@ -13,9 +13,9 @@ $(function () {
         $('.stage--section').show();
     });
     $('.screen--button').click(function () {
-        $('.screen--button').show('.active');
-        // $('.stage--button').remove('.active');
-        // $('.in-dev--button').remove('.active');
+        $('.screen--button').addClass('active');
+        $('.stage--button').removeClass('active');
+        $('.in-dev--button').removeClass('active');
 
         $('.stage--section').hide();
         $('.in-dev--section').hide();
@@ -23,9 +23,9 @@ $(function () {
         $('.screen--section').show();
     });
     $('.in-dev--button').click(function () {
-        $('.in-dev--button').show('.active');
-        // $('.stage--button').remove('.active');
-        // $('.screen--button').remove('.active');
+        $('.in-dev--button').addClass('active');
+        $('.stage--button').removeClass('active');
+        $('.screen--button').removeClass('active');
 
         $('.stage--section').hide();
         $('.screen--section').hide();

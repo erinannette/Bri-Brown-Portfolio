@@ -107,8 +107,9 @@
             padding: 5px 0;
         }
     }
-    .in-dev--section {
-        height: 80vh;
+    .in-dev--section, .screen--section {
+        height: 100%;
+        padding: 25px 0;
     }
 }
 

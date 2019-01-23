@@ -1082,8 +1082,9 @@ footer {
     margin: 0 auto; }
     .section--wrapper .text-container p {
       padding: 5px 0; }
-  .section--wrapper .in-dev--section {
-    height: 80vh; }
+  .section--wrapper .in-dev--section, .section--wrapper .screen--section {
+    height: 100%;
+    padding: 25px 0; }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
   display: block; }
