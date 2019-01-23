@@ -1057,7 +1057,10 @@ footer {
         text-align: center;
         color: #222222; }
     .section--wrapper .writing--container .active {
-      background-color: white; }
+      background-color: white;
+      border: 1px solid #5d5e5d;
+      width: 32%;
+      padding: 20px 0; }
     .section--wrapper .writing--container .hover {
       background-color: #15379f;
       border: 1px solid black;

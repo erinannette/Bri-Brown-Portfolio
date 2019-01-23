@@ -1,12 +1,38 @@
 const hello = 'Hi World';
 console.log(hello);
 
-// Steps:
-// 1. click on the Image
-// 2. text appears below the Image
-// 3. click on a different Image
-// 4. text from previous click disappears 
-// 5. new text appears
+$(function () {
+    $('.stage--button').click(function () {
+        $('.stage--button').add('.active');
+        // $('.screen--button').remove('.active');
+        // $('.in-dev--button').remove('.active');
+
+        $('.screen--section').hide();
+        $('.in-dev--section').hide();
+
+        $('.stage--section').show();
+    });
+    $('.screen--button').click(function () {
+        $('.screen--button').add('.active');
+        // $('.stage--button').remove('.active');
+        // $('.in-dev--button').remove('.active');
+
+        $('.stage--section').hide();
+        $('.in-dev--section').hide();
+
+        $('.screen--section').show();
+    });
+    $('.in-dev--button').click(function () {
+        $('.in-dev--button').add('.active');
+        // $('.stage--button').remove('.active');
+        // $('.screen--button').remove('.active');
+
+        $('.stage--section').hide();
+        $('.screen--section').hide();
+
+        $('.in-dev--section').show();
+    });
+});
 
 
 

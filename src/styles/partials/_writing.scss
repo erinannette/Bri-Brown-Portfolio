@@ -75,6 +75,9 @@
         }
         .active {
             background-color: white;
+            border: 1px solid $mdgrey;
+            width: 32%;
+            padding: 20px 0;
         }
         .hover {
             background-color: $blue;
