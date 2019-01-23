@@ -3,7 +3,7 @@ console.log(hello);
 
 $(function () {
     $('.stage--button').click(function () {
-        $('.stage--button').add('.active');
+        $('.stage--button').show('.active');
         // $('.screen--button').remove('.active');
         // $('.in-dev--button').remove('.active');
 
@@ -13,7 +13,7 @@ $(function () {
         $('.stage--section').show();
     });
     $('.screen--button').click(function () {
-        $('.screen--button').add('.active');
+        $('.screen--button').show('.active');
         // $('.stage--button').remove('.active');
         // $('.in-dev--button').remove('.active');
 
@@ -23,7 +23,7 @@ $(function () {
         $('.screen--section').show();
     });
     $('.in-dev--button').click(function () {
-        $('.in-dev--button').add('.active');
+        $('.in-dev--button').show('.active');
         // $('.stage--button').remove('.active');
         // $('.screen--button').remove('.active');
 

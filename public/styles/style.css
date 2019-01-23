@@ -992,7 +992,7 @@ footer {
 .header--wrapper__writing {
   width: 100%;
   height: 40vh;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.65)), url("../../public/assets/hero-writing.jpg");
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.65)), url("../../public/assets/hero-writing-b.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
@@ -1017,6 +1017,7 @@ footer {
 
 .section--wrapper {
   padding-top: 20px;
+  width: 100%;
   max-width: 1800px; }
   .section--wrapper .home-button {
     width: 10%;
@@ -1053,14 +1054,14 @@ footer {
       border: 1px solid #5d5e5d;
       width: 32%;
       padding: 20px 0; }
-      .section--wrapper .writing--container .heading--title h2 {
-        text-align: center;
-        color: #222222; }
     .section--wrapper .writing--container .active {
       background-color: white;
       border: 1px solid #5d5e5d;
       width: 32%;
       padding: 20px 0; }
+    .section--wrapper .writing--container h2 {
+      text-align: center;
+      color: #222222; }
     .section--wrapper .writing--container .hover {
       background-color: #15379f;
       border: 1px solid black;
@@ -1075,14 +1076,14 @@ footer {
       .section--wrapper .writing--posters .posters--list li img {
         width: 100%;
         display: block; }
-  .section--wrapper .writing--text {
-    width: 100%; }
-    .section--wrapper .writing--text .text-container {
-      width: 90%;
-      height: 40vh;
-      margin: 0 auto; }
-      .section--wrapper .writing--text .text-container p {
-        padding: 5px 0; }
+  .section--wrapper .text-container {
+    width: 90%;
+    height: 40vh;
+    margin: 0 auto; }
+    .section--wrapper .text-container p {
+      padding: 5px 0; }
+  .section--wrapper .in-dev--section {
+    height: 80vh; }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
   display: block; }
