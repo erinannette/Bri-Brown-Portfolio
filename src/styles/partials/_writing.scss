@@ -19,7 +19,7 @@
     justify-content: space-around;
     align-items: center;
     h1, i {
-        text-shadow: 2px 2px 4px $mdgrey;
+        text-shadow: 1px 1px 3px $mdgrey;
         color: $dkgrey;
         width: 80%;
         transition: all 0.2s ease-in-out;
@@ -100,7 +100,7 @@
         }
     }
     .text-container {
-        width: 90%;
+        width: 80%;
         height: 40vh;
         margin: 0 auto;
         p {
@@ -110,6 +110,13 @@
     .in-dev--section, .screen--section {
         height: 100%;
         padding: 25px 0;
+        h3, h4 {
+            padding-top: 10px;
+        } 
+        
+        // p {
+        //     padding-bottom: 10px;
+        // }
     }
 }
 

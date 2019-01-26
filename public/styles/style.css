@@ -1002,7 +1002,7 @@ footer {
   justify-content: space-around;
   align-items: center; }
   .header--wrapper__writing h1, .header--wrapper__writing i {
-    text-shadow: 2px 2px 4px #5d5e5d;
+    text-shadow: 1px 1px 3px #5d5e5d;
     color: #222222;
     width: 80%;
     transition: all 0.2s ease-in-out; }
@@ -1077,7 +1077,7 @@ footer {
         width: 100%;
         display: block; }
   .section--wrapper .text-container {
-    width: 90%;
+    width: 80%;
     height: 40vh;
     margin: 0 auto; }
     .section--wrapper .text-container p {
@@ -1085,6 +1085,8 @@ footer {
   .section--wrapper .in-dev--section, .section--wrapper .screen--section {
     height: 100%;
     padding: 25px 0; }
+    .section--wrapper .in-dev--section h3, .section--wrapper .in-dev--section h4, .section--wrapper .screen--section h3, .section--wrapper .screen--section h4 {
+      padding-top: 10px; }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
   display: block; }
@@ -1580,6 +1582,26 @@ footer {
         border-right: 1px solid #5d5e5d; }
       footer .footer--container ul .footer--container__img {
         width: 22px; }
+
+.header--wrapper__writing {
+  width: 100%;
+  height: 40vh;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.65)), url("../../public/assets/hero-directing.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  padding-left: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center; }
+  .header--wrapper__writing h1, .header--wrapper__writing i {
+    text-shadow: 1px 1px 3px #5d5e5d;
+    color: #222222;
+    width: 80%;
+    transition: all 0.2s ease-in-out; }
+  .header--wrapper__writing i:hover {
+    color: #15379f; }
 
 #about {
   width: 100%;

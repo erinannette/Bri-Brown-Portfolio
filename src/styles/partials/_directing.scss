@@ -4,4 +4,26 @@
 @import "partials/_menu.scss";
 @import "partials/_footer.scss";
 
-// testing testing
+.header--wrapper__writing {
+    // border: 1px solid red;
+    width: 100%;
+    height: 40vh;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5),rgba(255, 255, 255, 0.65)), url("../../public/assets/hero-directing.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    padding-left: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    h1, i {
+        text-shadow: 1px 1px 3px $mdgrey;
+        color: $dkgrey;
+        width: 80%;
+        transition: all 0.2s ease-in-out;
+    }
+    i:hover {
+        color: $blue;
+    }
+}
