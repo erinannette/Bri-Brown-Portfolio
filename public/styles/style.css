@@ -1583,7 +1583,7 @@ footer {
       footer .footer--container ul .footer--container__img {
         width: 22px; }
 
-.header--wrapper__writing {
+.header--wrapper__directing {
   width: 100%;
   height: 40vh;
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.65)), url("../../public/assets/hero-directing.jpg");
@@ -1595,12 +1595,12 @@ footer {
   flex-direction: row;
   justify-content: space-around;
   align-items: center; }
-  .header--wrapper__writing h1, .header--wrapper__writing i {
+  .header--wrapper__directing h1, .header--wrapper__directing i {
     text-shadow: 1px 1px 3px #5d5e5d;
     color: #222222;
     width: 80%;
     transition: all 0.2s ease-in-out; }
-  .header--wrapper__writing i:hover {
+  .header--wrapper__directing i:hover {
     color: #15379f; }
 
 #about {
