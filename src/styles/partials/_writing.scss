@@ -120,5 +120,24 @@
     }
 }
 
-
-// STAGE SECTION
+.collapsible {
+    background-color: $ltgrey;
+    color: $dkgrey;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 17px;
+}
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: white;
+}
+.active, .collapsible:hover {
+    background-color: $dkgrey;
+    color: white;
+}

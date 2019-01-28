@@ -242,6 +242,18 @@ ul, li {
   letter-spacing: 1px;
   color: black; }
 
+button {
+  font-size: 18px;
+  font-size: 1.8rem;
+  font-family: "Comfortaa", sans-serif;
+  font-weight: 700;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: black;
+  text-align: center;
+  letter-spacing: 2px; }
+
 .container--nav li {
   font-size: 18px;
   font-size: 1.8rem;
@@ -736,6 +748,18 @@ ul, li {
   font-weight: 300;
   letter-spacing: 1px;
   color: black; }
+
+button {
+  font-size: 18px;
+  font-size: 1.8rem;
+  font-family: "Comfortaa", sans-serif;
+  font-weight: 700;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: black;
+  text-align: center;
+  letter-spacing: 2px; }
 
 .container--nav li {
   font-size: 18px;
@@ -1088,6 +1112,27 @@ footer {
     .section--wrapper .in-dev--section h3, .section--wrapper .in-dev--section h4, .section--wrapper .screen--section h3, .section--wrapper .screen--section h4 {
       padding-top: 10px; }
 
+.collapsible {
+  background-color: #e3e8e8;
+  color: #222222;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 17px; }
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: white; }
+
+.active, .collapsible:hover {
+  background-color: #222222;
+  color: white; }
+
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
   display: block; }
 
@@ -1330,6 +1375,18 @@ ul, li {
   font-weight: 300;
   letter-spacing: 1px;
   color: black; }
+
+button {
+  font-size: 18px;
+  font-size: 1.8rem;
+  font-family: "Comfortaa", sans-serif;
+  font-weight: 700;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: black;
+  text-align: center;
+  letter-spacing: 2px; }
 
 .container--nav li {
   font-size: 18px;
@@ -1608,9 +1665,31 @@ footer {
   flex-direction: row; }
   .timeline-wrapper .timeline {
     width: 70%; }
+    .timeline-wrapper .timeline .container {
+      width: 70%;
+      padding: 15px 0; }
+      .timeline-wrapper .timeline .container .collapsible {
+        background-color: #e3e8e8;
+        color: #222222;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: center;
+        outline: none;
+        font-size: 17px; }
+      .timeline-wrapper .timeline .container .content {
+        padding: 0 18px;
+        display: none;
+        overflow: hidden;
+        background-color: white; }
   .timeline-wrapper .quotes {
     width: 30%;
     padding: 5%; }
+
+.active, .collapsible:hover {
+  background-color: #15379f;
+  color: white; }
 
 .hide-quote {
   display: none; }

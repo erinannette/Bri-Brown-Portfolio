@@ -32,11 +32,36 @@
     flex-direction: row;
     .timeline {
         width: 70%;
+        .container {
+            width: 70%;
+            padding: 15px 0;
+            .collapsible {
+                background-color: $ltgrey;
+                color: $dkgrey;
+                cursor: pointer;
+                padding: 18px;
+                width: 100%;
+                border: none;
+                text-align: center;
+                outline: none;
+                font-size: 17px;
+            }
+            .content {
+                padding: 0 18px;
+                display: none;
+                overflow: hidden;
+                background-color: white;
+            }
+        }
     }
     .quotes {
         width: 30%;
         padding: 5%;
     }
+}
+.active, .collapsible:hover {
+    background-color: $blue;
+    color: white;
 }
 
 .hide-quote {

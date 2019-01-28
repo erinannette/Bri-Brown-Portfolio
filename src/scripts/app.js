@@ -1,6 +1,7 @@
 const hello = 'Hi World';
 console.log(hello);
 
+// WRITING PAGE - CLICKABLE STAGE IMAGES
 $(function () {
     $('.stage--button').click(function () {
         $('.stage--button').addClass('active');
@@ -33,8 +34,6 @@ $(function () {
         $('.in-dev--section').show();
     });
 });
-
-
 
 $(function () {
     $('.stage1-pic').click(function () {
@@ -70,3 +69,24 @@ $(function () {
         $('.stage4').show();
     });
 });
+// END OF WRITING PAGE - CLICKABLE STAGE IMAGES
+
+// WRITING PAGE - IN DEVELOPMENT COLLAPSIBLES
+const coll = document.getElementsByClassName("collapsible");
+let i;
+
+for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+        console.log("clicked");
+
+        this.classList.toggle("active");
+        let content = this.nextElementSibling;
+        console.log(content.style.display);
+
+        if (content.style.display === "block") {
+            content.style.display = "none";
+        } else {
+            content.style.display = "block";
+        }
+    });
+}
