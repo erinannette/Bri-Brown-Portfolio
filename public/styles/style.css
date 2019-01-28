@@ -1129,9 +1129,21 @@ footer {
   overflow: hidden;
   background-color: white; }
 
-.active, .collapsible:hover {
+.active-coll, .collapsible:hover {
   background-color: #222222;
   color: white; }
+
+.collapsible:after {
+  content: '\02795';
+  /* Unicode + */
+  font-size: 13px;
+  color: white;
+  float: right;
+  margin-left: 5px; }
+
+.active-coll:after {
+  content: "\2796";
+  /* Unicode - */ }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
   display: block; }

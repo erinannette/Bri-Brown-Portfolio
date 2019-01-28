@@ -137,7 +137,18 @@
     overflow: hidden;
     background-color: white;
 }
-.active, .collapsible:hover {
+.active-coll, .collapsible:hover {
     background-color: $dkgrey;
     color: white;
+}
+.collapsible:after {
+  content: '\02795'; /* Unicode + */
+  font-size: 13px;
+  color: white;
+  float: right;
+  margin-left: 5px;
+}
+
+.active-coll:after {
+  content: "\2796"; /* Unicode - */
 }

@@ -79,7 +79,7 @@ for (i = 0; i < coll.length; i++) {
     coll[i].addEventListener("click", function() {
         console.log("clicked");
 
-        this.classList.toggle("active");
+        this.classList.toggle("active-coll");
         let content = this.nextElementSibling;
         console.log(content.style.display);
 
