@@ -27,3 +27,18 @@
         color: $blue;
     }
 }
+.timeline-wrapper {
+    display: flex;
+    flex-direction: row;
+    .timeline {
+        width: 70%;
+    }
+    .quotes {
+        width: 30%;
+        padding: 5%;
+    }
+}
+
+.hide-quote {
+    display: none;
+}

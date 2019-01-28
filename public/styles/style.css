@@ -1603,6 +1603,18 @@ footer {
   .header--wrapper__directing i:hover {
     color: #15379f; }
 
+.timeline-wrapper {
+  display: flex;
+  flex-direction: row; }
+  .timeline-wrapper .timeline {
+    width: 70%; }
+  .timeline-wrapper .quotes {
+    width: 30%;
+    padding: 5%; }
+
+.hide-quote {
+  display: none; }
+
 #about {
   width: 100%;
   padding: 5% 0;
