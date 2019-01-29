@@ -1042,10 +1042,10 @@ footer {
 .header--wrapper__writing {
   width: 100%;
   height: 30vh;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.65)), url("../../public/assets/hero-writing-b.jpg");
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.3)), url("../../public/assets/hero-writing.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: bottom;
+  background-position: center;
   padding-left: 25px;
   display: flex;
   flex-direction: row;
@@ -1102,6 +1102,7 @@ footer {
     .section--wrapper .writing--container .heading--title {
       background-color: #e3e8e8;
       border: 1px solid #5d5e5d;
+      border-radius: 4px;
       width: 32%;
       padding: 20px 0; }
     .section--wrapper .writing--container .active {
