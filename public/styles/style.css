@@ -1041,7 +1041,7 @@ footer {
 
 .header--wrapper__writing {
   width: 100%;
-  height: 40vh;
+  height: 30vh;
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.65)), url("../../public/assets/hero-writing-b.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -1135,20 +1135,24 @@ footer {
   .section--wrapper .in-dev--section, .section--wrapper .screen--section {
     height: 100%;
     padding: 25px 0; }
-    .section--wrapper .in-dev--section h3, .section--wrapper .in-dev--section h4, .section--wrapper .screen--section h3, .section--wrapper .screen--section h4 {
-      padding-top: 10px; }
+    .section--wrapper .in-dev--section h3, .section--wrapper .screen--section h3 {
+      padding: 20px 0 10px 0; }
 
 .collapsible {
+  width: 100%;
   margin: 2px 0;
+  padding: 18px;
+  cursor: pointer;
   background-color: white;
   border: 1px solid #e3e8e8;
   color: #222222;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
   text-align: center;
   outline: none;
-  font-size: 17px; }
+  font-size: 17px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
 
 .content {
   padding: 0 18px;
@@ -1698,7 +1702,7 @@ footer {
 
 .header--wrapper__directing {
   width: 100%;
-  height: 40vh;
+  height: 30vh;
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.65)), url("../../public/assets/hero-directing.jpg");
   background-repeat: no-repeat;
   background-size: cover;

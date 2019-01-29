@@ -8,7 +8,7 @@
 .header--wrapper__writing {
     // border: 1px solid red;
     width: 100%;
-    height: 40vh;
+    height: 30vh;
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5),rgba(255, 255, 255, 0.65)), url("../../public/assets/hero-writing-b.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -110,27 +110,27 @@
     .in-dev--section, .screen--section {
         height: 100%;
         padding: 25px 0;
-        h3, h4 {
-            padding-top: 10px;
+        h3 {
+            padding: 20px 0 10px 0;
         } 
-        
-        // p {
-        //     padding-bottom: 10px;
-        // }
     }
 }
 
 .collapsible {
+    width: 100%;
     margin: 2px 0;
+    padding: 18px;
+    cursor: pointer;
     background-color: white;
     border: 1px solid $ltgrey;
     color: $dkgrey;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
     text-align: center;
     outline: none;
     font-size: 17px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 .content {
     padding: 0 18px;
