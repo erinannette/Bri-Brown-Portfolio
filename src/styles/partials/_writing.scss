@@ -121,12 +121,13 @@
 }
 
 .collapsible {
-    background-color: $ltgrey;
+    margin: 2px 0;
+    background-color: white;
+    border: 1px solid $ltgrey;
     color: $dkgrey;
     cursor: pointer;
     padding: 18px;
     width: 100%;
-    border: none;
     text-align: center;
     outline: none;
     font-size: 17px;
@@ -137,9 +138,13 @@
     overflow: hidden;
     background-color: white;
 }
-.active-coll, .collapsible:hover {
-    background-color: $dkgrey;
+.active-coll {
+    border: 1px solid $mdgrey;
     color: white;
+}
+.collapsible:hover {
+    border: 1px solid $mdgrey;
+    background-color: $ltgrey;
 }
 .collapsible:after {
   content: '\02795'; /* Unicode + */

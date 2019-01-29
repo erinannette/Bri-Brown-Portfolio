@@ -1139,12 +1139,13 @@ footer {
       padding-top: 10px; }
 
 .collapsible {
-  background-color: #e3e8e8;
+  margin: 2px 0;
+  background-color: white;
+  border: 1px solid #e3e8e8;
   color: #222222;
   cursor: pointer;
   padding: 18px;
   width: 100%;
-  border: none;
   text-align: center;
   outline: none;
   font-size: 17px; }
@@ -1155,9 +1156,13 @@ footer {
   overflow: hidden;
   background-color: white; }
 
-.active-coll, .collapsible:hover {
-  background-color: #222222;
+.active-coll {
+  border: 1px solid #5d5e5d;
   color: white; }
+
+.collapsible:hover {
+  border: 1px solid #5d5e5d;
+  background-color: #e3e8e8; }
 
 .collapsible:after {
   content: '\02795';
@@ -1733,12 +1738,12 @@ footer {
     .timeline-wrapper .timeline .container::after {
       content: '';
       position: absolute;
-      width: 25px;
-      height: 25px;
-      right: -17px;
+      width: 20px;
+      height: 20px;
+      right: -13px;
       background-color: white;
       border: 4px solid #5d5e5d;
-      top: 15px;
+      top: 18px;
       border-radius: 50%;
       z-index: 1; }
     .timeline-wrapper .timeline .left {
@@ -1772,7 +1777,7 @@ footer {
   .timeline-wrapper .timeline::after {
     content: '';
     position: absolute;
-    width: 6px;
+    width: 4px;
     background-color: #e3e8e8;
     top: 0;
     bottom: 0;
