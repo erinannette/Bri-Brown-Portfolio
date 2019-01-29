@@ -1045,7 +1045,7 @@ footer {
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.3)), url("../../public/assets/hero-writing.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: left;
   padding-left: 25px;
   display: flex;
   flex-direction: row;
@@ -1157,9 +1157,10 @@ footer {
 
 .content {
   padding: 0 18px;
-  display: none;
+  background-color: #e3e8e8;
   overflow: hidden;
-  background-color: white; }
+  max-height: 0;
+  transition: max-height 0.2s ease-out; }
 
 .active-coll {
   border: 1px solid #5d5e5d;

@@ -12,7 +12,7 @@
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2),rgba(255, 255, 255, 0.3)), url("../../public/assets/hero-writing.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: left;
     padding-left: 25px;
     display: flex;
     flex-direction: row;
@@ -135,9 +135,14 @@
 }
 .content {
     padding: 0 18px;
-    display: none;
+    background-color: $ltgrey;
     overflow: hidden;
-    background-color: white;
+    // WITHOUT ANIMATED COLLAPSE
+    // display: none;
+
+    // WITH ANIMATED COLLAPSE
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
 }
 .active-coll {
     border: 1px solid $mdgrey;

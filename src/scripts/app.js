@@ -81,12 +81,18 @@ for (i = 0; i < coll.length; i++) {
 
         this.classList.toggle("active-coll");
         let content = this.nextElementSibling;
-        console.log(content.style.display);
+        // WITHOUT ANIMATED COLLAPSE
+        // if (content.style.display === "block") {
+        //     content.style.display = "none";
+        // } else {
+        //     content.style.display = "block";
+        // }
 
-        if (content.style.display === "block") {
-            content.style.display = "none";
+        // WITH ANIMATED COLLAPSE
+        if (content.style.maxHeight){
+            content.style.maxHeight = null;
         } else {
-            content.style.display = "block";
+            content.style.maxHeight = content.scrollHeight + "px";
         }
     });
 }
