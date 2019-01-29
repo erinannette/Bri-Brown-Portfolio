@@ -63,6 +63,12 @@ p {
     @include paragraph-styles(17);
     line-height: 25px;
 }
+.timeline-prod {
+    @include title-styles(18);
+    line-height: 25px;
+    font-weight: 400;
+    padding: 10px 0 0 0;
+}
 a {
     text-decoration: none;
     
