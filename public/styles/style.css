@@ -325,13 +325,15 @@ i {
       color: black;
       text-decoration: none;
       margin: 0;
-      padding: 40px 20px 0;
+      padding: 40px 20px 5px;
       display: inline-block;
-      width: 100%; }
+      width: 100%;
+      border-bottom: 1px solid lightgrey; }
       .nav li a:hover {
         color: #15379f;
         transition: all 0.3s;
-        border-bottom: 1px solid #c7d1d1; }
+        border-bottom: 1px solid #c7d1d1;
+        text-shadow: 1px 1px 3px #c7d1d1; }
 
 .site--wrapper {
   width: 100%;
@@ -845,13 +847,15 @@ i {
       color: black;
       text-decoration: none;
       margin: 0;
-      padding: 40px 20px 0;
+      padding: 40px 20px 5px;
       display: inline-block;
-      width: 100%; }
+      width: 100%;
+      border-bottom: 1px solid lightgrey; }
       .nav li a:hover {
         color: #15379f;
         transition: all 0.3s;
-        border-bottom: 1px solid #c7d1d1; }
+        border-bottom: 1px solid #c7d1d1;
+        text-shadow: 1px 1px 3px #c7d1d1; }
 
 .site--wrapper {
   width: 100%;
@@ -1508,13 +1512,15 @@ i {
       color: black;
       text-decoration: none;
       margin: 0;
-      padding: 40px 20px 0;
+      padding: 40px 20px 5px;
       display: inline-block;
-      width: 100%; }
+      width: 100%;
+      border-bottom: 1px solid lightgrey; }
       .nav li a:hover {
         color: #15379f;
         transition: all 0.3s;
-        border-bottom: 1px solid #c7d1d1; }
+        border-bottom: 1px solid #c7d1d1;
+        text-shadow: 1px 1px 3px #c7d1d1; }
 
 .site--wrapper {
   width: 100%;
@@ -1874,12 +1880,15 @@ footer {
   flex-wrap: wrap; }
   #news .news-content {
     width: 100%;
-    padding: 0 2% 0 10%; }
+    padding: 0 5% 0 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left; }
     #news .news-content h3, #news .news-content p {
       padding-bottom: 2%; }
     #news .news-content .news-button {
-      margin: 10px auto 0;
-      padding: 10px;
+      margin: 0 auto;
+      padding: 10px 30px;
       background-color: #f1f3f3;
       border: 1px solid #5d5e5d;
       font-size: 15px;
@@ -1953,7 +1962,7 @@ form {
     display: none; }
   form .submit {
     margin: 10px auto 0;
-    padding: 10px;
+    padding: 10px 30px;
     background-color: #f1f3f3;
     border: 1px solid #5d5e5d;
     font-size: 15px;
@@ -2019,6 +2028,6 @@ form {
       padding-bottom: 0px; }
   #contact .full-name, #contact .email {
     padding: 2% 5%;
-    margin-bottom: 1%; }
+    margin-bottom: 3px; }
   #contact .message {
     padding: 1% 5% 8%; } }

@@ -102,13 +102,16 @@
     flex-wrap: wrap;
     .news-content {
         width: 100%;
-        padding: 0 2% 0 10%;
+        padding: 0 5% 0 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
         h3, p {
             padding-bottom: 2%;
         }
         .news-button {
-            margin: 10px auto 0;
-            padding: 10px;
+            margin: 0 auto;
+            padding: 10px 30px;
             background-color: $ltblue;
             border: 1px solid $mdgrey;
             @include title-styles(15);
@@ -177,7 +180,7 @@ form {
     }
     .submit {
         margin: 10px auto 0;
-        padding: 10px;
+        padding: 10px 30px;
         background-color: $ltblue;
         border: 1px solid $mdgrey;
         @include title-styles(15);
@@ -215,7 +218,7 @@ form {
 }
 @media (max-width: 650px) {
     // HERO
-    
+
     // ABOUT ME
     #about {
         flex-direction: column;
@@ -270,7 +273,7 @@ form {
         }
         .full-name, .email {
             padding: 2% 5%;
-            margin-bottom: 1%;
+            margin-bottom: 3px;
         }
         .message {
             padding: 1% 5% 8%;
