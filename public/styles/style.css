@@ -464,7 +464,7 @@ input:checked {
   width: 100%; }
   .site--wrapper .hero .hero--image__full {
     width: 100%;
-    height: 60vh;
+    height: 55vh;
     background: url("../../public/assets/hero-full.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -984,7 +984,7 @@ input:checked {
   width: 100%; }
   .site--wrapper .hero .hero--image__full {
     width: 100%;
-    height: 60vh;
+    height: 55vh;
     background: url("../../public/assets/hero-full.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -1647,7 +1647,7 @@ input:checked {
   width: 100%; }
   .site--wrapper .hero .hero--image__full {
     width: 100%;
-    height: 60vh;
+    height: 55vh;
     background: url("../../public/assets/hero-full.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -1970,3 +1970,55 @@ form {
       background-color: #15379f;
       border: 1px solid black;
       color: white; }
+
+@media (max-width: 950px) {
+  #portfolio .portfolio-image {
+    width: 60%; }
+    #portfolio .portfolio-image .portfolio-left {
+      width: 0; }
+    #portfolio .portfolio-image .portfolio-writing, #portfolio .portfolio-image .portfolio-directing {
+      width: calc(50% - 3px); }
+    #portfolio .portfolio-image .portfolio-space {
+      width: 3px; }
+  #portfolio .portfolio-quote {
+    width: 40%;
+    padding: 5%; } }
+
+@media (max-width: 650px) {
+  #about {
+    flex-direction: column; }
+    #about .about-text {
+      padding: 0 2% 0 10%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-content: space-between; }
+      #about .about-text h3, #about .about-text p {
+        padding-bottom: 2%; }
+  #portfolio .portfolio-content {
+    flex-direction: column; }
+    #portfolio .portfolio-content .portfolio-image {
+      width: 100%; }
+      #portfolio .portfolio-content .portfolio-image .portfolio-left {
+        width: 0; }
+      #portfolio .portfolio-content .portfolio-image .portfolio-writing, #portfolio .portfolio-content .portfolio-image .portfolio-directing {
+        width: calc(50% - 3px); }
+        #portfolio .portfolio-content .portfolio-image .portfolio-writing h3, #portfolio .portfolio-content .portfolio-image .portfolio-directing h3 {
+          padding: 50% 0; }
+      #portfolio .portfolio-content .portfolio-image .portfolio-space {
+        width: 3px; }
+    #portfolio .portfolio-content .portfolio-quote {
+      width: 100%;
+      padding: 8%; }
+  #news {
+    padding: 8% 0; }
+  #contact .form-top, #contact .form-bottom {
+    flex-direction: column; }
+    #contact .form-top .form-row_left, #contact .form-top .form-row_right, #contact .form-bottom .form-row_left, #contact .form-bottom .form-row_right {
+      width: 100%;
+      padding-bottom: 0px; }
+  #contact .full-name, #contact .email {
+    padding: 2% 5%;
+    margin-bottom: 1%; }
+  #contact .message {
+    padding: 1% 5% 8%; } }

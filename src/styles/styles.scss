@@ -190,3 +190,90 @@ form {
         }
     }
 }
+
+// RESPONSIVENESS
+@media (max-width: 950px) {
+    // PORTFOLIO
+    #portfolio {
+        .portfolio-image {
+            width: 60%;
+            .portfolio-left {
+                width: 0;
+            }
+            .portfolio-writing, .portfolio-directing {
+                width: calc(50% - 3px);
+            }
+            .portfolio-space {
+                width: 3px;
+            }
+        }
+        .portfolio-quote {
+            width: 40%;
+            padding: 5%;
+        }
+    }
+}
+@media (max-width: 650px) {
+    // HERO
+    
+    // ABOUT ME
+    #about {
+        flex-direction: column;
+        .about-text {
+            padding: 0 2% 0 10%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-content: space-between;
+            h3, p {
+                padding-bottom: 2%;
+            }
+        }
+    }
+    // PORTFOLIO
+    #portfolio {
+        .portfolio-content {
+            flex-direction: column;
+            .portfolio-image {
+                width: 100%;
+                .portfolio-left {
+                    width: 0;
+                }
+                .portfolio-writing, .portfolio-directing {
+                    width: calc(50% - 3px);
+                    h3 {
+                        padding: 50% 0;
+                    }
+                }
+                .portfolio-space {
+                    width: 3px;
+                }
+            }
+            .portfolio-quote {
+                width: 100%;
+                padding: 8%;
+            }
+        }
+    }
+    // NEWS
+    #news {
+        padding: 8% 0;
+    }
+    // CONTACT ME
+    #contact {
+        .form-top, .form-bottom {
+            flex-direction: column;
+            .form-row_left, .form-row_right {
+                width: 100%;
+                padding-bottom: 0px;
+            }
+        }
+        .full-name, .email {
+            padding: 2% 5%;
+            margin-bottom: 1%;
+        }
+        .message {
+            padding: 1% 5% 8%;
+        }
+    }
+}
