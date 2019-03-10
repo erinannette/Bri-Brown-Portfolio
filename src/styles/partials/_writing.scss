@@ -93,10 +93,15 @@
         .posters--list {
             width: 100%;
             display: flex;
-            flex-direction: row;
-            li img {
-                width: 100%;
+            flex-direction: column;
+            flex-wrap: wrap;
+            li {
+                width: 25%;
                 display: block;
+                // li img {
+                //     width: 100%;
+                //     display: block;
+                // }
             }
         }
     }
@@ -162,4 +167,87 @@
 
 .active-coll:after {
   content: "\2796"; /* Unicode - */
+}
+@media (max-width: 850px) {
+    .section--wrapper {
+        .writing--container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            .heading--title {
+                background-color:$ltgrey;
+                border: 1px solid $mdgrey;
+                border-radius: 4px;
+                width: 50%;
+                padding: 15px 0;
+                margin: 3px auto;
+            }
+            .active {
+                background-color: white;
+                border: 1px solid $mdgrey;
+                width: 50%;
+                padding: 15px 0;
+            }
+            h2 {
+                text-align: center;
+                color: $dkgrey;
+            }
+            .hover {
+                background-color: $blue;
+                border: 1px solid black;
+                color: white;
+            }
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    .section--wrapper {
+        .writing--container {
+            .heading--title {
+                width: 75%;
+                padding: 15px 0;
+                margin: 3px auto;
+            }
+            .active {
+                width: 75%;
+                padding: 15px 0;
+            }
+            h2 {
+                text-align: center;
+                color: $dkgrey;
+            }
+            .hover {
+                background-color: $blue;
+                border: 1px solid black;
+                color: white;
+            }
+        }
+    }
+}
+
+@media (max-width: 430px) {
+    .section--wrapper {
+        .writing--container {
+            .heading--title {
+                width: 95%;
+                padding: 15px 0;
+                margin: 3px auto;
+            }
+            .active {
+                width: 95%;
+                padding: 15px 0;
+            }
+            h2 {
+                text-align: center;
+                color: $dkgrey;
+            }
+            .hover {
+                background-color: $blue;
+                border: 1px solid black;
+                color: white;
+            }
+        }
+    }
 }

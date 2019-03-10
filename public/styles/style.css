@@ -1127,9 +1127,10 @@ footer {
     .section--wrapper .writing--posters .posters--list {
       width: 100%;
       display: flex;
-      flex-direction: row; }
-      .section--wrapper .writing--posters .posters--list li img {
-        width: 100%;
+      flex-direction: column;
+      flex-wrap: wrap; }
+      .section--wrapper .writing--posters .posters--list li {
+        width: 25%;
         display: block; }
   .section--wrapper .text-container {
     width: 80%;
@@ -1185,6 +1186,64 @@ footer {
 .active-coll:after {
   content: "\2796";
   /* Unicode - */ }
+
+@media (max-width: 850px) {
+  .section--wrapper .writing--container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; }
+    .section--wrapper .writing--container .heading--title {
+      background-color: #e3e8e8;
+      border: 1px solid #5d5e5d;
+      border-radius: 4px;
+      width: 50%;
+      padding: 15px 0;
+      margin: 3px auto; }
+    .section--wrapper .writing--container .active {
+      background-color: white;
+      border: 1px solid #5d5e5d;
+      width: 50%;
+      padding: 15px 0; }
+    .section--wrapper .writing--container h2 {
+      text-align: center;
+      color: #222222; }
+    .section--wrapper .writing--container .hover {
+      background-color: #15379f;
+      border: 1px solid black;
+      color: white; } }
+
+@media (max-width: 550px) {
+  .section--wrapper .writing--container .heading--title {
+    width: 75%;
+    padding: 15px 0;
+    margin: 3px auto; }
+  .section--wrapper .writing--container .active {
+    width: 75%;
+    padding: 15px 0; }
+  .section--wrapper .writing--container h2 {
+    text-align: center;
+    color: #222222; }
+  .section--wrapper .writing--container .hover {
+    background-color: #15379f;
+    border: 1px solid black;
+    color: white; } }
+
+@media (max-width: 430px) {
+  .section--wrapper .writing--container .heading--title {
+    width: 95%;
+    padding: 15px 0;
+    margin: 3px auto; }
+  .section--wrapper .writing--container .active {
+    width: 95%;
+    padding: 15px 0; }
+  .section--wrapper .writing--container h2 {
+    text-align: center;
+    color: #222222; }
+  .section--wrapper .writing--container .hover {
+    background-color: #15379f;
+    border: 1px solid black;
+    color: white; } }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
   display: block; }
