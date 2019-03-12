@@ -104,7 +104,7 @@
         left: 50%;
         margin-left: -3px;
     }
-    .quotes {
+    .quotes--desktop {
         width: 30%;
         padding: 5%;
         div {
@@ -115,4 +115,57 @@
 
 .hide-quote {
     display: none;
+}
+
+// RESPONSIVENESS
+@media (max-width: 850px) {
+    .timeline-wrapper {
+        .timeline {
+            width: 95%;
+        }
+    }
+    .quotes--desktop {
+        display: none;
+    }
+}
+@media (max-width: 650px) {
+    .timeline-wrapper {
+        .timeline {
+            .container {
+                width: 90%;
+            }
+            .container.right {
+                left: 0;
+            }
+            .right::before {
+                content: " ";
+                height: 0;
+                position: absolute;
+                top: 22px;
+                width: 0;
+                z-index: 1;
+                right: 30px;
+                left: auto;
+                border: medium solid $mdgrey;
+                border-width: 10px 0 10px 10px;
+                border-color: transparent transparent transparent $mdgrey;
+            }
+            .right::after {
+                left: auto;
+            }
+        }
+        .timeline::after {
+            left: 90%;
+        }
+        
+    }
+}
+@media (max-width: 650px) {
+    .header--wrapper__directing {
+        flex-direction: column;
+        justify-content: center;
+        a {
+            padding-top: 20px;
+        }
+    }
 }
