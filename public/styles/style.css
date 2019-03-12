@@ -1159,8 +1159,8 @@ footer {
       border-radius: 4px; }
   .section--wrapper .text-container {
     width: 80%;
-    height: 40vh;
-    margin: 0 auto; }
+    margin: 0 auto;
+    padding-bottom: 5%; }
     .section--wrapper .text-container p {
       padding: 5px 0; }
   .section--wrapper .in-dev--section, .section--wrapper .screen--section {
