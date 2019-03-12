@@ -113,22 +113,32 @@
     }
 }
 
-.hide-quote {
-    display: none;
-}
-
 // RESPONSIVENESS
 @media (max-width: 850px) {
     .timeline-wrapper {
+        flex-direction: column;
         .timeline {
             width: 95%;
+            margin: 10px auto;
+        }
+        .quotes--desktop {
+            width: 85%;
+            margin: 0 auto;
+            padding: 3% 0;
+            div {
+                padding: 20px 0;
+            }
+            p {
+                font-size: 15px;
+                line-height: 22px;
+            }
+            .hide-quote {
+                display: none;
+            }
         }
     }
-    .quotes--desktop {
-        display: none;
-    }
 }
-@media (max-width: 650px) {
+@media (max-width: 700px) {
     .timeline-wrapper {
         .timeline {
             .container {
@@ -157,10 +167,9 @@
         .timeline::after {
             left: 90%;
         }
-        
     }
 }
-@media (max-width: 650px) {
+@media (max-width: 420px) {
     .header--wrapper__directing {
         flex-direction: column;
         justify-content: center;
