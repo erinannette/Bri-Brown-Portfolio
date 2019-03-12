@@ -1073,6 +1073,10 @@ footer {
   padding-top: 20px;
   width: 100%;
   max-width: 1800px; }
+  .section--wrapper .grow {
+    transition: all .2s ease-in-out; }
+    .section--wrapper .grow:hover {
+      transform: scale(1.1); }
   .section--wrapper .home-button {
     width: 10%;
     margin: 10px;
@@ -1121,17 +1125,38 @@ footer {
       background-color: #15379f;
       border: 1px solid black;
       color: white; }
+  .section--wrapper .stage--section {
+    height: 100%; }
   .section--wrapper .writing--posters {
     width: 100%;
     padding: 2% 0; }
     .section--wrapper .writing--posters .posters--list {
       width: 100%;
       display: flex;
-      flex-direction: column;
-      flex-wrap: wrap; }
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      list-style: none; }
       .section--wrapper .writing--posters .posters--list li {
-        width: 25%;
-        display: block; }
+        width: 24.5%;
+        position: relative; }
+      .section--wrapper .writing--posters .posters--list .overlay1, .section--wrapper .writing--posters .posters--list .overlay2, .section--wrapper .writing--posters .posters--list .overlay3, .section--wrapper .writing--posters .posters--list .overlay4 {
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(rgba(255, 255, 255, 0.4) 100%, transparent 100%); }
+      .section--wrapper .writing--posters .posters--list .active-poster {
+        background: linear-gradient(rgba(218, 155, 155, 0) 100%, transparent 100%); }
+    .section--wrapper .writing--posters img {
+      width: 100%;
+      border-radius: 4px; }
   .section--wrapper .text-container {
     width: 80%;
     height: 40vh;
@@ -1197,13 +1222,13 @@ footer {
       background-color: #e3e8e8;
       border: 1px solid #5d5e5d;
       border-radius: 4px;
-      width: 50%;
+      width: 75%;
       padding: 15px 0;
       margin: 3px auto; }
     .section--wrapper .writing--container .active {
       background-color: white;
       border: 1px solid #5d5e5d;
-      width: 50%;
+      width: 75%;
       padding: 15px 0; }
     .section--wrapper .writing--container h2 {
       text-align: center;
@@ -1214,13 +1239,6 @@ footer {
       color: white; } }
 
 @media (max-width: 550px) {
-  .section--wrapper .writing--container .heading--title {
-    width: 75%;
-    padding: 15px 0;
-    margin: 3px auto; }
-  .section--wrapper .writing--container .active {
-    width: 75%;
-    padding: 15px 0; }
   .section--wrapper .writing--container h2 {
     text-align: center;
     color: #222222; }
@@ -1890,7 +1908,7 @@ footer {
   width: 100%;
   padding: 5% 0;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap; }
   #portfolio .portfolio-title {
     width: 100%;

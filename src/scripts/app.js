@@ -35,8 +35,14 @@ $(function () {
     });
 });
 
+// CLICKABLE STAGE POSTERS
 $(function () {
     $('.stage1-pic').click(function () {
+        $('.overlay1').removeClass('overlay1');
+        $('.overlay2').addClass('overlay2');
+        $('.overlay3').addClass('overlay3');
+        $('.overlay4').addClass('overlay4');
+        
         $('.stage0').hide();
         $('.stage2').hide();
         $('.stage3').hide();
@@ -45,6 +51,11 @@ $(function () {
         $('.stage1').show();
     });
     $('.stage2-pic').click(function () {
+        $('.overlay1').addClass('overlay1');
+        $('.overlay2').removeClass('overlay2');
+        $('.overlay3').addClass('overlay3');
+        $('.overlay4').addClass('overlay4');
+
         $('.stage0').hide();
         $('.stage1').hide();
         $('.stage3').hide();
@@ -53,6 +64,11 @@ $(function () {
         $('.stage2').show();
     });
     $('.stage3-pic').click(function () {
+        $('.overlay1').addClass('overlay1');
+        $('.overlay2').addClass('overlay2');
+        $('.overlay3').removeClass('overlay3');
+        $('.overlay4').addClass('overlay4');
+
         $('.stage0').hide();
         $('.stage1').hide();
         $('.stage2').hide();
@@ -61,6 +77,11 @@ $(function () {
         $('.stage3').show();
     });
     $('.stage4-pic').click(function () {
+        $('.overlay1').addClass('overlay1');
+        $('.overlay2').addClass('overlay2');
+        $('.overlay3').addClass('overlay3');
+        $('.overlay4').removeClass('overlay4');
+
         $('.stage0').hide();
         $('.stage1').hide();
         $('.stage2').hide();
